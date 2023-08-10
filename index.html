@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
         rel="stylesheet">
 
+    <!-- fontAwsome icon kit -->
+    <script src="https://kit.fontawesome.com/be061c3c82.js" crossorigin="anonymous"></script>
     <!-- tailwind custom property -->
     <script>
         tailwind.config = {
@@ -23,6 +25,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        dollor: '#FABE4C',
                     }
                 }
             }
@@ -30,7 +33,7 @@
     </script>
 
     <style>
-        .bebas-neue {
+        .bebas {
             font-family: 'Bebas Neue', sans-serif;
         }
 
@@ -45,12 +48,12 @@
     <!-- header section start here -->
     <header class="w-4/5 m-auto">
         <!-- navbar section start here -->
-        <div class="flex justify-between items-center py-4">
+        <nav class="flex justify-between items-center py-4">
             <div class="">
                 <img class="w-48 lg:w-96 h-10" src="icons/logo.png" alt="">
             </div>
             <div class="">
-                <ul class="hidden lg:flex gap-6">
+                <ul class="hidden lg:flex gap-6 roboto">
                     <li><a>Home</a></li>
                     <li><a>Products</a></li>
                     <li><a>About us</a></li>
@@ -71,9 +74,21 @@
                     <li><a>About us</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <!-- navbar section ends here -->
         <!-- banner section start here -->
+        <div class="hero">
+            <div class="hero-content flex-col-reverse lg:pr-20 justify-between w-full lg:flex-row-reverse">
+                <img src="images/model.png" class="min-w-sm lg:max-w-sm" />
+                <div>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-[#FABE4C]">Be the Penguins<br>
+                        of Winter</h1>
+                    <p class="py-6">Lorem Ipsum is simply dummy text of the printing<br>
+                        and typesetting industry.</p>
+                    <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                </div>
+            </div>
+        </div>
         <!-- banner section ends here -->
     </header>
     <!-- header section ends here -->
