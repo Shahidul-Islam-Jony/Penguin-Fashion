@@ -26,6 +26,7 @@
                     colors: {
                         clifford: '#da373d',
                         dollor: '#FABE4C',
+                        'header-background': '#FFFBF0',
                     }
                 }
             }
@@ -46,55 +47,156 @@
 
 <body>
     <!-- header section start here -->
-    <header class="w-4/5 m-auto">
-        <!-- navbar section start here -->
-        <nav class="flex justify-between items-center py-4">
-            <div class="">
-                <img class="w-48 lg:w-96 h-10" src="icons/logo.png" alt="">
-            </div>
-            <div class="">
-                <ul class="hidden lg:flex gap-6 roboto">
-                    <li><a>Home</a></li>
-                    <li><a>Products</a></li>
-                    <li><a>About us</a></li>
+    <header class="bg-header-background">
+        <div class="w-4/5 m-auto">
+            <!-- navbar section start here -->
+            <nav class="flex justify-between items-center py-4">
+                <div class="">
+                    <img class="w-48 lg:w-96 h-10" src="icons/logo.png" alt="">
+                </div>
+                <div class="">
+                    <ul class="hidden lg:flex gap-6 roboto">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>About us</a></li>
 
-                </ul>
-            </div>
-            <div class="dropdown lg:hidden">
-                <button class="btn btn-square btn-ghost mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        class="inline-block w-5 h-5 stroke-current">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                <ul class="dropdown-content menu ">
-                    <li><a>Home</a></li>
-                    <li><a>Products</a></li>
-                    <li><a>About us</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- navbar section ends here -->
-        <!-- banner section start here -->
-        <div class="hero">
-            <div class="hero-content flex-col-reverse lg:pr-20 justify-between w-full lg:flex-row-reverse">
-                <img src="images/model.png" class="min-w-sm lg:max-w-sm" />
-                <div>
-                    <h1 class="text-5xl lg:text-7xl font-bold text-[#FABE4C]">Be the Penguins<br>
-                        of Winter</h1>
-                    <p class="py-6">Lorem Ipsum is simply dummy text of the printing<br>
-                        and typesetting industry.</p>
-                    <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                    </ul>
+                </div>
+                <div class="dropdown lg:hidden">
+                    <button class="btn btn-square btn-ghost mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-5 h-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-content menu ">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>About us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- navbar section ends here -->
+            <!-- banner section start here -->
+            <div class="hero">
+                <div class="hero-content flex-col-reverse lg:pr-20 justify-between w-full lg:flex-row-reverse">
+                    <img src="images/model.png" class="min-w-sm lg:max-w-sm" />
+                    <div>
+                        <h1 class="text-5xl lg:text-7xl font-bold text-dollor">Be the Penguins<br>
+                            of Winter</h1>
+                        <p class="py-6">Lorem Ipsum is simply dummy text of the printing<br>
+                            and typesetting industry.</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
                 </div>
             </div>
+            <!-- banner section ends here -->
         </div>
-        <!-- banner section ends here -->
     </header>
     <!-- header section ends here -->
     <!-- main section start here -->
-    <main>
+    <main class="w-4/5 m-auto">
+        <!-- women jacket section start here -->
+        <div class="mt-12 mb-6">
+            <h1 class="bebas text-5xl">WOMAN JACKET</h1>
+        </div>
+        <div class="flex flex-row gap-7">
+            <!-- jacket 1 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-72 p-4 m-auto" src="images/jacket-1.png" alt="jacket-1" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Yellow Coat Jacket</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- jacket 2 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-72 p-4 m-auto" src="images/jacket-2.png" alt="jacket-2" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Ladies Jacket</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- jacket 3 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="p-4 bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-64 p-4 m-auto" src="images/jacket-3.png" alt="jacket-3" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Woman Leather Jacket</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- women jacket section ends here -->
 
+        <!-- Men jacket section start here -->
+        <div class="mt-24 mb-6">
+            <h1 class="bebas text-5xl">MAN JACKET</h1>
+        </div>
+        <div class="flex flex-row gap-7">
+            <!-- jacket 1 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-72 p-4 m-auto" src="images/jacket-4.png" alt="jacket-1" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Snowboard Jacket Mens</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- jacket 2 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-72 p-4 m-auto" src="images/jacket-5.png" alt="jacket-2" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Man Leather Jackets</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- jacket 3 -->
+            <div class="card w-96 shadow-xl roboto rounded-lg">
+                <div class="p-4 bg-[#F1F1F1] m-5 rounded-lg"><img class="w-72 h-64 p-4 m-auto" src="images/jacket-6.png" alt="jacket-3" /></div>
+                <div class="card-body pt-3">
+                    <h2 class="card-title">Man Casual Jackets</h2>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-actions justify-end items-center">
+                        <p class="text-dollor text-3xl font-bold">$234</p>
+                        <button class="btn bg-green-700 text-white"><i class="fa-solid fa-cart-shopping"></i> buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Men jacket section ends here -->
     </main>
     <!-- main section ends here -->
     <!-- footer section start here -->
